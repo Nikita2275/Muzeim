@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestSelect"
+    android:background="@drawable/bg">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="25dp"
+                android:text="@string/Select_title"
+                android:textAlignment="center"
+                android:textColor="@color/zoloto"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/language"
+                android:background="@drawable/custom_button_1"
+                android:text="@string/Language"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                />
+            <ImageButton
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_button_1"
+                android:id="@+id/imageButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="onStart"
+                app:srcCompat="@drawable/play"/>
+
+            <Button
+                android:id="@+id/reiting"
+                android:onClick="Reiting"
+                android:background="@drawable/custom_button_1"
+                android:text="@string/Table"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                />
+
+        </LinearLayout>
+
+            <ImageView
+                android:id="@+id/border"
+                android:layout_width="340dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img6" />
+
+            <com.example.testappmuzei2.RoundImageView
+                android:onClick="Muzei1"
+                android:id="@+id/images1"
+                android:layout_width="287dp"
+                android:layout_height="147dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img14" />
+
+            <TextView
+                android:id="@+id/Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="@string/Title_muziem_1"
+                android:textColor="@color/zoloto"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/border1"
+                android:layout_width="340dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/zoloto"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/border2"
+                android:layout_width="340dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img6" />
+
+            <com.example.testappmuzei2.RoundImageView
+                android:onClick="Muzei2"
+                android:id="@+id/images2"
+                android:layout_width="287dp"
+                android:layout_height="147dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img18" />
+
+            <TextView
+                android:id="@+id/Text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/Title_muziem_2"
+                android:textColor="@color/zoloto"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/border3"
+                android:layout_width="340dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/zoloto"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/border4"
+                android:layout_width="340dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img6" />
+
+            <com.example.testappmuzei2.RoundImageView
+                android:id="@+id/images3"
+                android:layout_width="287dp"
+                android:layout_height="147dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:onClick="Muzei3"
+                android:src="@drawable/img12" />
+
+            <TextView
+                android:id="@+id/Text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/Title_muziem_3"
+                android:textColor="@color/zoloto"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/border5"
+                android:layout_width="340dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/zoloto"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/border6"
+                android:layout_width="340dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img6" />
+
+            <com.example.testappmuzei2.RoundImageView
+                android:onClick="Muzei4"
+                android:id="@+id/images4"
+                android:layout_width="287dp"
+                android:layout_height="147dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img13" />
+
+            <TextView
+                android:id="@+id/Text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/Title_muziem_4"
+                android:textColor="@color/zoloto"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/border7"
+                android:layout_width="340dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/zoloto"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/border8"
+                android:layout_width="340dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img6" />
+
+            <com.example.testappmuzei2.RoundImageView
+                android:onClick="Muzei5"
+                android:id="@+id/images5"
+                android:layout_width="287dp"
+                android:layout_height="147dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img14" />
+
+            <TextView
+                android:id="@+id/Text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/Title_muziem_5"
+                android:textColor="@color/zoloto"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/border9"
+                android:layout_width="340dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/zoloto"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/border10"
+                android:layout_width="340dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img6" />
+
+            <com.example.testappmuzei2.RoundImageView
+                android:onClick="Muzei6"
+                android:id="@+id/images6"
+                android:layout_width="287dp"
+                android:layout_height="147dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img15"/>
+
+            <TextView
+                android:id="@+id/Text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/Title_muziem_6"
+                android:textColor="@color/zoloto"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/border11"
+                android:layout_width="340dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/zoloto"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/border12"
+                android:layout_width="340dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img6" />
+
+            <com.example.testappmuzei2.RoundImageView
+                android:onClick="Muzei7"
+                android:id="@+id/images7"
+                android:layout_width="287dp"
+                android:layout_height="147dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img11" />
+
+            <TextView
+                android:id="@+id/Text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/Title_muziem_7"
+                android:textColor="@color/zoloto"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/border13"
+                android:layout_width="340dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/zoloto"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/border14"
+                android:layout_width="340dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img6" />
+
+            <com.example.testappmuzei2.RoundImageView
+                android:onClick="Muzei8"
+                android:id="@+id/images8"
+                android:layout_width="287dp"
+                android:layout_height="147dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img17" />
+
+            <TextView
+                android:id="@+id/Text7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/Title_muziem_8"
+                android:textColor="@color/zoloto"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/border15"
+                android:layout_width="340dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/img6" />
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
